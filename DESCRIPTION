@@ -1,0 +1,11 @@
+Package: covidtools
+Type: Package
+Title: Get Cleaned Covid Data
+Version: 0.1.0
+Author: Graham Pressey
+Maintainer: Graham Pressey <graham.pressey@gmail.com>
+Description: Pulls and cleans CSSEGIS data for US, Canada, and world. Adds population statistics.
+License: What license is it under?
+Requires: tidyverse
+Encoding: UTF-8
+LazyData: true
