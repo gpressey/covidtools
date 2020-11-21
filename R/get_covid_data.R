@@ -56,7 +56,6 @@ clean_us_canada_covid_cases <- function(df){
     group_by(province_state) %>%
     mutate(
       new_cases = total_cases - lag(total_cases, default = 0, order_by = date),
-      new_cases = if_else(new_cases > 0, new_cases, 0),
       total_confirmed_percent = total_cases / population,
       new_confirmed_percent = new_cases / population
     ) %>%
